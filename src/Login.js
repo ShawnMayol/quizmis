@@ -1,21 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
     return (
         <div className="flex h-screen">
             <div className="w-1/3 bg-white flex items-center justify-center">
                 <div className="text-center">
-                    <h1 className="text-4xl font-bold mb-4">Logo Here</h1>
+                    <Link 
+                        to="/"
+                        className="text-4xl font-bold mb-4">Logo Here
+                    </Link>
                 </div>
             </div>
 
             <div className="w-2/3 bg-[#20935C] flex flex-col items-center justify-center">
-                <a
-                    href="/signup"
+                <Link
+                    to="/signup"
                     className="absolute top-4 right-4 bg-[#00A950] text-white px-12 py-3 rounded-full shadow-xl hover:bg-[#2dbb58] transition duration-300"
                 >
                     Sign Up
-                </a>
+                </Link>
 
                 <form className="bg-white p-8 rounded-lg shadow-xl w-3/5">
                     <h2 className="text-2xl font-bold mb-6 text-center">
