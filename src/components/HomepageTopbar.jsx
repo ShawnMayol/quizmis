@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import logo from "/assets/QuizmisBrand.svg";
 const TopBar = () => {
     return (
-        <div className="fixed top-0 bg-[#FFFFF0] shadow-[#02A850] shadow-sm w-full py-3 px-8 flex justify-between items-center z-40">
+        <div className="fixed top-0 bg-[#FFFFF0] shadow-[#02A850] shadow-sm w-full py-3 md:px-8 px-2 flex justify-between items-center z-40">
             <Link to="/">
                 <img src={logo} className="h-14 mr-4" alt="Quizmis Logo" />
             </Link>
-            <div className="flex space-x-4">
+            <div className="flex md:space-x-4 text-center space-x-2">
                 <Link
                     to="/login"
                     className="bg-[#FAF9F6] text-[#02A850] border-2 px-4 py-2 rounded-lg shadow-lg hover:bg-[#E6F4EA] transition duration-300"
@@ -20,7 +20,7 @@ const TopBar = () => {
 
                 <Link
                     to="/signup"
-                    className="bg-[#00A850] hover:bg-[#33a149] trasition duration-300 text-white border-2 border-transparent px-4 py-2 rounded-lg shadow-md"
+                    className="bg-[#00A850] hover:bg-[#33a149] md:text-md trasition duration-300 text-white border-2 border-transparent px-4 py-2 rounded-lg shadow-md"
                     style={{
                         boxShadow: "0 5px 0 #2c8c3b",
                     }}
